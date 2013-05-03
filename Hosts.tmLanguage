@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string></string>
+	</array>
+	<key>name</key>
+	<string>Hosts</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>A commented line</string>
+			<key>match</key>
+			<string>#(.*)$</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>string</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Host mapping</string>
+			<key>match</key>
+			<string>^(\S+)(\s+)([\S|\s]+)$</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.hosts</string>
+	<key>uuid</key>
+	<string>b25c8e16-1613-447a-a46e-71a4a5c07a02</string>
+</dict>
+</plist>

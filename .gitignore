@@ -1,0 +1,9 @@
+*.cache
+Package Control.sublime-settings
+Package Control.last-run
+
+# SublimeText project files
+/*.sublime-project
+*.sublime-workspace
+sftp-config*.json
+*.cache
