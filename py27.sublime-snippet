@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[# -*- coding: utf-8 -*-
+from __future__ import (unicode_literals, print_function, division,
+                        absolute_import)
+
+
+]]></content>
+    <tabTrigger>py27</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
