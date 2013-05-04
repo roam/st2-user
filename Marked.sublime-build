@@ -1,4 +1,11 @@
+// Requires patch of $ST2/Packages/Default/exec.py:44
+// for k, v in proc_env.iteritems():
+//     path_vars = os.path.expandvars(v)
+//     if isinstance(path_vars, unicode):
+//         path_vars = path_vars.encode(sys.getfilesystemencoding())
+//     proc_env[k] = path_vars
+//
 {
 	"cmd": ["open","-a","/Applications/Marked.app","$file"],
-	"selector": "text.html.markdown"
+	"selector": "source.markdown"
 }
