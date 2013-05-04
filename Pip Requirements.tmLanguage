@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>txt</string>
+	</array>
+	<key>name</key>
+	<string>Pip Requirements</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.source.pip_requirements</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.other.link.source.pip_requirements</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Include</string>
+			<key>match</key>
+			<string>^(\-r) (.+)</string>
+			<key>name</key>
+			<string>include.source.pip_requirements</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.source.pip_requirements</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.other.link.source.pip_requirements</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Indexes, find-links</string>
+			<key>match</key>
+			<string>^(\-\-[index\-url|find\-links]) .+</string>
+			<key>name</key>
+			<string>index.source.pip_requirements</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.source.pip_requirements</string>
+				</dict>
+				<key>11</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.source.pip_requirements</string>
+				</dict>
+				<key>12</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.source.pip_requirements</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>support.type.source.pip_requirements</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.source.pip_requirements</string>
+				</dict>
+				<key>9</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.source.pip_requirements</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^(\-[e]\s+)?((.+)#egg=)?([A-Za-z0-9 \-\_]+(\[([A-Za-z0-9 \-\_]+)\])?)(([=|&gt;|&lt;]=)([A-Za-z0-9 \-\_\.]+)(,([&lt;|&gt;]=?)(\S+))?)?\s*</string>
+			<key>name</key>
+			<string>dependency.source.pip_requirements</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comments</string>
+			<key>match</key>
+			<string>#(.*)$</string>
+			<key>name</key>
+			<string>comment.source.pip_requirements</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.pip_requirements</string>
+	<key>uuid</key>
+	<string>27471791-1cbc-420b-bb61-dc0623e0b835</string>
+</dict>
+</plist>

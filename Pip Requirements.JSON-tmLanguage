@@ -1,0 +1,42 @@
+{ "name": "Pip Requirements",
+  "scopeName": "source.pip_requirements",
+  "fileTypes": ["txt"],
+  "patterns": [
+  {
+    "match": "^(\\-r) (.+)",
+    "name": "include.source.pip_requirements",
+    "comment": "Include",
+    "captures": {
+        "1": { "name": "keyword.operator.source.pip_requirements" },
+        "2": { "name": "string.other.link.source.pip_requirements" }
+    }
+  },
+  {
+    "match": "^(\\-\\-[index\\-url|find\\-links]) .+",
+    "name": "index.source.pip_requirements",
+    "comment": "Indexes, find-links",
+    "captures": {
+        "1": { "name": "keyword.operator.source.pip_requirements" },
+        "2": { "name": "string.other.link.source.pip_requirements" }
+    }
+  },
+  {
+    "match": "^(\\-[e]\\s+)?((.+)#egg=)?([A-Za-z0-9 \\-\\_]+(\\[([A-Za-z0-9 \\-\\_]+)\\])?)(([=|>|<]=)([A-Za-z0-9 \\-\\_\\.]+)(,([<|>]=?)(\\S+))?)?\\s*",
+    "name": "dependency.source.pip_requirements",
+    "captures": {
+        "1": {"name": "keyword.operator.source.pip_requirements"},
+        "4": {"name": "support.type.source.pip_requirements"},
+        "5": {"name": "keyword.control"},
+        "8": {"name": "keyword.operator.source.pip_requirements"},
+        "9": {"name": "constant.numeric.source.pip_requirements"},
+        "11": {"name": "keyword.operator.source.pip_requirements"},
+        "12": {"name": "constant.numeric.source.pip_requirements"}
+    }
+  },
+  { "match": "#(.*)$",
+    "name": "comment.source.pip_requirements",
+    "comment": "Comments"
+  }
+  ],
+  "uuid": "27471791-1cbc-420b-bb61-dc0623e0b835"
+}
